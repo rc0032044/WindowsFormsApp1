@@ -28,51 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.btnUP = new System.Windows.Forms.Button();
-			this.btnLeft = new System.Windows.Forms.Button();
-			this.btnRight = new System.Windows.Forms.Button();
-			this.btnDown = new System.Windows.Forms.Button();
+			this.btn1 = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// btnUP
+			// btn1
 			// 
-			this.btnUP.Location = new System.Drawing.Point(69, 367);
-			this.btnUP.Name = "btnUP";
-			this.btnUP.Size = new System.Drawing.Size(75, 23);
-			this.btnUP.TabIndex = 0;
-			this.btnUP.Text = "button1";
-			this.btnUP.UseVisualStyleBackColor = true;
-			this.btnUP.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// btnLeft
-			// 
-			this.btnLeft.Location = new System.Drawing.Point(141, 396);
-			this.btnLeft.Name = "btnLeft";
-			this.btnLeft.Size = new System.Drawing.Size(75, 23);
-			this.btnLeft.TabIndex = 1;
-			this.btnLeft.Text = "button2";
-			this.btnLeft.UseVisualStyleBackColor = true;
-			this.btnLeft.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// btnRight
-			// 
-			this.btnRight.Location = new System.Drawing.Point(0, 396);
-			this.btnRight.Name = "btnRight";
-			this.btnRight.Size = new System.Drawing.Size(75, 23);
-			this.btnRight.TabIndex = 2;
-			this.btnRight.Text = "button3";
-			this.btnRight.UseVisualStyleBackColor = true;
-			// 
-			// btnDown
-			// 
-			this.btnDown.Location = new System.Drawing.Point(69, 425);
-			this.btnDown.Name = "btnDown";
-			this.btnDown.Size = new System.Drawing.Size(75, 23);
-			this.btnDown.TabIndex = 3;
-			this.btnDown.Text = "button4";
-			this.btnDown.UseVisualStyleBackColor = true;
+			this.btn1.Location = new System.Drawing.Point(69, 367);
+			this.btn1.Name = "btn1";
+			this.btn1.Size = new System.Drawing.Size(75, 23);
+			this.btn1.TabIndex = 0;
+			this.btn1.Text = "button1";
+			this.btn1.UseVisualStyleBackColor = true;
+			this.btn1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// pictureBox1
 			// 
@@ -83,6 +52,7 @@
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 4;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
 			// Form1
 			// 
@@ -90,10 +60,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.btnDown);
-			this.Controls.Add(this.btnRight);
-			this.Controls.Add(this.btnLeft);
-			this.Controls.Add(this.btnUP);
+			this.Controls.Add(this.btn1);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -103,10 +70,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.Button btnUP;
-		private System.Windows.Forms.Button btnLeft;
-		private System.Windows.Forms.Button btnRight;
-		private System.Windows.Forms.Button btnDown;
+		private System.Windows.Forms.Button btn1;
 		private System.Windows.Forms.PictureBox pictureBox1;
 	}
 }
